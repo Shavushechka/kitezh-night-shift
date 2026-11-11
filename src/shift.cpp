@@ -84,7 +84,6 @@ ShiftReport runNightShift(const std::vector<Vessel>& queue) {
                     if (fitsInChamber(batch, candidate)) {
                         batch.push_back(candidate);
                         taken[i] = true;
-                        can_take_regular = true;
                     } else {
                         can_take_regular = false;
                     }
